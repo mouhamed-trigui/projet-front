@@ -1,0 +1,89 @@
+<div class="card">
+  <div class="card-header">
+    <strong>Formulaire de Permission de Sortie</strong> 
+  </div>
+  <div class="card-body">
+    <form class="form-horizontal">
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Nom</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input" name="RH.nom" [(ngModel)]="RH.nom" class="form-control" placeholder="Votre Nom">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Prenom</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input"name="RH.prenom" [(ngModel)]="RH.prenom" class="form-control" placeholder="Votre Prenom">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Matricule</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input" name="RH.cin" [(ngModel)]="RH.cin" class="form-control" placeholder="Votre Matricule">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Num Telephone</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input"name="RH.tel" [(ngModel)]="RH.tel" class="form-control" placeholder="+216-********">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Fonction</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input" name="RH.fonction" [(ngModel)]="RH.fonction" class="form-control" placeholder="Votre fonction">
+        </div>
+      </div>
+      
+     
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="date-input">Date de Sortie</label>
+        <div class="col-md-9">
+          <input class="form-control" id="date-input" type="date"name="RH.date" [(ngModel)]="RH.date" placeholder="date">
+          <span class="help-block">Please enter a valid date</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Heur Debut</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input" name="RH.hdebut" [(ngModel)]="RH.hdebut" class="form-control" placeholder="Heur de debut Sortie">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Heur Fin</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input" name="RH.hfin" [(ngModel)]="RH.hfin" class="form-control" placeholder="Heur de fin sortie">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="text-input">Nombre de Heurs</label>
+        <div class="col-md-9">
+          <input type="text" id="text-input"name="RH.nbrheur" [(ngModel)]="RH.nbrheur" class="form-control" placeholder="Nombre de jours">
+        </div>
+      </div>
+      
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label" >Accord Administration</label>
+        <div class="col-md-9 col-form-label">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="RH.accordAdmin" [(ngModel)]="RH.accordAdmin" id="radio1" value="Accepter" checked>
+            <label class="form-check-label" for="radio1">
+              Accepter
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio"name="RH.accordAdmin" [(ngModel)]="RH.accordAdmin" id="radio2" value="Refuser">
+            <label class="form-check-label" for="radio2">
+              Refuser
+            </label>
+          </div>
+          
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card-footer">
+    <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+    <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+  </div>
+  

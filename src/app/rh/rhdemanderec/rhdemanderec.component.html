@@ -1,0 +1,86 @@
+<div class="card">
+    <div class="card-header">
+      <strong>Formulaire De Recrutement</strong>
+    </div>
+    <div class="card-body">
+      <form class="form-horizontal">
+
+          <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="date-input">Date demande</label>
+              <div class="col-md-9">
+                <input class="form-control" id="date-input" type="date" name="RHdem.dateDemande" [(ngModel)]="RHdem.dateDemande" placeholder="date">
+                <span class="help-block">Please enter a valid date</span>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="date-input">Date souhaitee</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="date-input" type="date" name="RHdem.dateSouhaite" [(ngModel)]="RHdem.dateSouhaite" placeholder="date">
+                  <span class="help-block">Please enter a valid date</span>
+                </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="text-input">Demandeur</label>
+                  <div class="col-md-9">
+                    <input type="text" id="text-input" name="RHdem.demandeur" [(ngModel)]="RHdem.demandeur" class="form-control" placeholder=" ">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="text-input">Fonction Demandee</label>
+                    <div class="col-md-9">
+                      <input type="text" id="text-input" name="RHdem.fonctionDemandee" [(ngModel)]="RHdem.fonctionDemandee" class="form-control" placeholder=" ">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="text-input">Nombre De Personne  </label>
+                      <div class="col-md-9">
+                        <input type="text" id="text-input" name="RHdem.nbrPersone" [(ngModel)]="RHdem.nbrPersone" class="form-control" placeholder=" ">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Profil Demande   </label>
+                        <div class="col-md-9">
+                          <input type="text" id="text-input" name="RHdem.profilDemande" [(ngModel)]="RHdem.profilDemande" class="form-control" placeholder=" ">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-md-3 col-form-label" for="text-input">Mission</label>
+                          <div class="col-md-9">
+                            <input type="text" id="text-input" name="RHdem.mission" [(ngModel)]="RHdem.mission" class="form-control" placeholder=" ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="text-input">Competence</label>
+                            <div class="col-md-9">
+                              <input type="text" id="text-input" name="RHdem.competence" [(ngModel)]="RHdem.competence" class="form-control" placeholder=" ">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-3 col-form-label" for="text-input">Motif</label>
+                              <div class="col-md-9">
+                                <input type="text" id="text-input" name="RHdem.motif" [(ngModel)]="RHdem.motif" class="form-control" placeholder=" ">
+                              </div>
+                            </div>
+                           
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="text-input">Nom Gerant</label>
+                                <div class="col-md-9">
+                                  <input type="text" id="text-input" name="RHdem.nomGerant" [(ngModel)]="RHdem.nomGerant" class="form-control" placeholder=" ">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-md-3 col-form-label" for="text-input">Nom Responsable RH</label>
+                                  <div class="col-md-9">
+                                    <input type="text" id="text-input" name="RHdem.nomRespRH" [(ngModel)]="RHdem.nomRespRH" class="form-control" placeholder=" ">
+                                  </div>
+                                </div>
+
+       
+       
+      </form>
+    </div>
+    <div class="card-footer">
+      <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+      <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+    </div>
+    

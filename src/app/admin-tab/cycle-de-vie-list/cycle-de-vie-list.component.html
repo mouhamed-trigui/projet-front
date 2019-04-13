@@ -1,0 +1,44 @@
+<div>
+  <div class="card">
+    <div class="card-header">
+      <i class="fa fa-align-justify"></i> Simple Table
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Created By</th>
+            <th>Page</th>
+            <th>Chapitre</th>
+            <th>Description de modification</th>
+            <th>Date de Modification</th>
+            <th>Observation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of listModifications">
+            <td>{{ x.createdBy }}</td>
+            <td>{{ x.page }}</td>
+            <td>{{ x.chapitre }}</td>
+            <td>{{ x.descModif }}</td>
+            <td>
+              {{ x.dateModif }}
+            </td>
+            <td>{{ x.observation }}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

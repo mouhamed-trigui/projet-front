@@ -1,0 +1,111 @@
+<div>
+<div class="card">
+    <div class="card-header">
+      <strong>Formulaire D'Evaluation</strong>
+    </div>
+    <div class="card-body">
+      <form class="form-horizontal">
+          <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Nom Responsable Hiérarchique</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="RHeval.nomRespo" [(ngModel)]="RHeval.nomRespo"class="form-control" placeholder="Votre Nom ">
+              </div>
+            </div>  
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="text-input">Fonction</label>
+                <div class="col-md-9">
+                  <input type="text" id="text-input" name="RHeval.fonctionRespo" [(ngModel)]="RHeval.fonctionRespo"class="form-control" placeholder="Votre Fonction">
+                </div>
+              </div> 
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="text-input">Matricule</label>
+                  <div class="col-md-9">
+                    <input type="text" id="text-input" name="RHeval.cinRespo" [(ngModel)]="RHeval.cinRespo"class="form-control" placeholder="Votre Matricule">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="date-input">Date</label>
+                    <div class="col-md-9">
+                      <input class="form-control" id="date-input" type="date" name="RHeval.dateRespo" [(ngModel)]="RHeval.dateRespo" placeholder="date">
+                      <span class="help-block">Please enter a valid date</span>
+                    </div>
+                  </div>
+      </form>
+    </div>
+    <div class="card-footer">
+      <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+      <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+          <strong></strong>
+        </div>
+        <div class="card-body">
+          <form class="form-horizontal">
+              
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="text-input">Nom Employe</label>
+                  <div class="col-md-9">
+                    <input type="text" id="text-input" name="RHeval.nomEmp" [(ngModel)]="RHeval.nomEmp"class="form-control" placeholder="Votre Nom">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="text-input">Prenom Employe</label>
+                    <div class="col-md-9">
+                      <input type="text" id="text-input" name="RHeval.prenomEmp" [(ngModel)]="RHeval.prenomEmp"class="form-control" placeholder="Votre PreNom">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="text-input">Fonction</label>
+                      <div class="col-md-9">
+                        <input type="text" id="text-input" name="RHeval.fonctionEmp" [(ngModel)]="RHeval.fonctionEmp"class="form-control" placeholder="Votre Fonction">
+                      </div>
+                    </div> 
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Matricule</label>
+                        <div class="col-md-9">
+                          <input type="text" id="text-input" name="RHeval.cinEmp" [(ngModel)]="RHeval.cinEmp"class="form-control" placeholder="Votre Matricule">
+                        </div>
+                      </div> 
+                      <div class="form-group row">
+                          <label class="col-md-3 col-form-label" for="text-input">Fonction</label>
+                          <div class="col-md-9">
+                            <input type="text" id="text-input" name="RHeval.fonctionEmp" [(ngModel)]="RHeval.fonctionEmp"class="form-control" placeholder="Votre Fonction">
+                          </div>
+                        </div> 
+                        <div class="card-header">
+                            <strong>Evaluation</strong>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-md-3 col-form-label" for="text-input">Absence</label>
+                              <div class="col-md-9">
+                                <input type="text" id="text-input" name="RHeval.evalAbsence" [(ngModel)]="RHeval.evalAbsence"class="form-control" placeholder="">
+                              </div>
+                            </div> 
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="text-input">Respect</label>
+                                <div class="col-md-9">
+                                  <input type="text" id="text-input" name="RHeval.evalRespect" [(ngModel)]="RHeval.evalRespect"class="form-control" placeholder="">
+                                </div>
+                              </div> 
+                              <div class="form-group row">
+                                  <label class="col-md-3 col-form-label" for="text-input">Savoir Faire</label>
+                                  <div class="col-md-9">
+                                    <input type="text" id="text-input" name="RHeval.evalsavoirFaire" [(ngModel)]="RHeval.evalsavoirFaire"class="form-control" placeholder="">
+                                  </div>
+                                </div> 
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="text-input">Evaluation Total</label>
+                                    <div class="col-md-9">
+                                      <input type="text" id="text-input" name="RHeval.evalTotal" [(ngModel)]="RHeval.evalTotal"class="form-control" placeholder="">
+                                    </div>
+                                  </div> 
+                            
+
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+        </div>
+  </div>

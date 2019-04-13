@@ -1,0 +1,7 @@
+new JsPDF(  
+    Orientation, // Landscape or Portrait  
+  
+    unit, // mm, cm, in  
+  
+    format // A2, A4 etc  
+);  

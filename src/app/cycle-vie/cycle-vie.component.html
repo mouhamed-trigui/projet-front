@@ -1,0 +1,48 @@
+<div class="card">
+  <div id ="pdf">
+    <div class="card-header">
+      <strong>Basic Form</strong> Elements
+    </div>
+    <div class="card-body">
+      <form class="form-horizontal">
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="text-input">Page</label>
+          <div class="col-md-9">
+            <input type="text" id="text-input" name="modification.page" [(ngModel)]="modification.page" class="form-control" placeholder="Page">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="text-input">Chapitre</label>
+          <div class="col-md-9">
+            <input type="text" id="text-input" name="modification.chapitre" [(ngModel)]="modification.chapitre" class="form-control" placeholder="Page">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="text-input">Description de modification</label>
+          <div class="col-md-9">
+            <input type="text" id="text-input" name="modification.descModif" [(ngModel)]="modification.descModif" class="form-control" placeholder="Page">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="text-input">Date de Modification</label>
+          <div class="col-md-9">
+            <input type="text" id="text-input" name="modification.dateModif" [(ngModel)]="modification.dateModif" class="form-control" placeholder="Page">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="text-input">Observation</label>
+          <div class="col-md-9">
+            <input type="text" id="text-input" name="modification.observation" [(ngModel)]="modification.observation" class="form-control" placeholder="Page">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+    <div class="card-footer">
+      <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+      <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+      
+      <button  (click)="download()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Download PDF</button>
+        
+    </div>
+    
