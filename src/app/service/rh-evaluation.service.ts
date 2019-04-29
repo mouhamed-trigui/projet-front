@@ -12,5 +12,8 @@ export class RhEvaluationService {
   save(RHE:Rhevaluation){
     return this.httpclients.post(this.url,RHE);
   }
+  getAll(){
+    return this.httpclients.get<Rhevaluation>("http://localhost:8081/RHevaluationEmps");
+  }
   
 }

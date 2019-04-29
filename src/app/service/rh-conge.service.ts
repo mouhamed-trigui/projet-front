@@ -16,4 +16,7 @@ export class RhCongeService {
     return this.httpclients.post(this.url,RHC);
     
   }
+  getAll(){
+    return this.httpclients.get<RhConge>("http://localhost:8081/RHconges");
+  }
 }

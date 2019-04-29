@@ -1,0 +1,49 @@
+<div>
+  <div class="card">
+    <div class="card-header">
+      <i class="fa fa-align-justify"></i> Simple Table
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Created By</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Fonction</th>
+            <th>Date Debut Conge</th>
+            <th>Nombre de Jours</th>
+            <th>Type De Conge</th>
+            
+            <th>Accord Administration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of listrhconge">
+            <td>{{ x.createdBy }}</td>
+            <td>{{ x.nom }}</td>
+            <td>{{ x.prenom }}</td>
+            <td>{{ x.fonction }}</td>
+            <td>
+              {{ x.dateDebut }}
+            </td>
+            <td>{{ x.nbrJr }}</td>
+            <td>{{ x.typeConge }}</td>
+            <td>{{ x.accordAdmin }}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

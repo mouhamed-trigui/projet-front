@@ -1,0 +1,96 @@
+<div>
+  <div class="card">
+    <div class="card-header">
+      <i class="fa fa-align-justify"></i> Liste Responsable Evaluation
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nom Responsable</th>
+            <th>Fonction</th>
+            <th>Matricule</th>
+            <th>Date</th>
+          
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of listeval">
+            <td>{{ x.nomRespo }}</td>
+            <td>{{ x.fonctionRespo }}</td>
+            <td>{{ x.cinRespo}}</td>
+            <td>{{ x.dateRespo}}</td>
+           
+            
+          </tr>
+          
+        </tbody>
+      </table>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+      <div class="card-header">
+        <i class="fa fa-align-justify"></i> Liste Evaluation
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              
+              <th>Nom Employe</th>
+              <th>Prenom Emplye</th>
+              <th>Fonction</th>
+              
+              <th>Matricule</th>
+              <th>Observation</th>
+              
+              
+                <th>Absence</th>
+                <th>Respect</th>
+                <th>Savoir Faire</th>
+                <th>Evaluation Total</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let x of listeval">
+              
+              <td> {{ x.nomEmp }} </td>
+              <td>{{ x.prenomEmp }}</td>
+              <td>{{ x.fonctionEmp }}</td>
+              <td>{{ x.cinEmp }}</td>
+              
+              <td>{{ x.observation }}</td>
+              <td>{{ x.evalAbsence }}</td>
+              <td>{{ x.evalRespect }}</td>
+              <td>{{ x.evalsavoirFaire }}</td>
+              <td>{{ x.evalTotal }}</td>
+              
+            </tr>
+            
+          </tbody>
+        </table>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+          <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+    </div>
+</div>

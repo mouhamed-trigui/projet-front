@@ -1,5 +1,6 @@
 <div>
 <div class="card">
+    <div ng-show ="contentToConvert" id="contentToConvert">
     <div class="card-header">
       <strong>Formulaire D'Evaluation</strong>
     </div>
@@ -32,10 +33,7 @@
                   </div>
       </form>
     </div>
-    <div class="card-footer">
-      <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-      <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-    </div>
+   
     <div class="card">
         <div class="card-header">
           <strong></strong>
@@ -68,9 +66,9 @@
                         </div>
                       </div> 
                       <div class="form-group row">
-                          <label class="col-md-3 col-form-label" for="text-input">Fonction</label>
+                          <label class="col-md-3 col-form-label" for="text-input">Observation</label>
                           <div class="col-md-9">
-                            <input type="text" id="text-input" name="RHeval.fonctionEmp" [(ngModel)]="RHeval.fonctionEmp"class="form-control" placeholder="Votre Fonction">
+                            <input type="text" id="text-input" name="RHeval.observation" [(ngModel)]="RHeval.observation"class="form-control" placeholder="Votre Observation">
                           </div>
                         </div> 
                         <div class="card-header">
@@ -103,9 +101,15 @@
                             
 
           </form>
+        
+        
         </div>
+    </div>
+    </div>
+        
         <div class="card-footer">
           <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+          <button  (click)="download()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Download PDF</button>
         </div>
   </div>

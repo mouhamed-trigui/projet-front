@@ -1,4 +1,5 @@
 <div class="card">
+  <div ng-show ="contentToConvert" id="contentToConvert">
     <div class="card-header">
       <strong>Formulaire De Recrutement</strong>
     </div>
@@ -79,8 +80,10 @@
        
       </form>
     </div>
+    </div>
     <div class="card-footer">
       <button type="submit" (click)="submit()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
       <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+      <button  (click)="download()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Download PDF</button>
     </div>
     

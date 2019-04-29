@@ -1,0 +1,52 @@
+<div>
+    <div class="card">
+      <div class="card-header">
+        <i class="fa fa-align-justify"></i> Simple Table
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+                <th>Created By</th>
+              <th>Date demande</th>
+              <th>Date souhaitee</th>
+              <th>Demandeur</th>
+              <th>Fonction Deandee</th>
+              <th>Nombre De Personne</th>
+              <th>Profil Demande</th>
+              <th>Mission</th> 
+              <th>competence</th>
+              <th>Nom Responsable RH</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let x of listdemanderec">
+              <td>{{ x.createdBy }}</td>
+              <td>{{ x.dateDemande }}</td>
+              <td>{{ x.dateSouhaite }}</td>
+              <td>{{ x.demandeur }}</td>
+              <td>
+                {{ x.fonctionDemandee }}
+              </td>
+              <td>{{ x.nbrPersone }}</td>
+              <td>{{ x.profilDemande }}</td>
+              <td>{{ x.mission }}</td>
+              <td>{{ x.competence }}</td>
+              <td>{{ x.nomRespRH }}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+          <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>

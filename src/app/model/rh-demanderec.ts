@@ -4,7 +4,7 @@ export class Rhdemanderec {
     dateSouhaite:Date;
     demandeur: string;
     fonctionDemandee: string;
-    nbrPersone: number;
+    nbrPersone: string;
     profilDemande: string;
     mission: string;
     competence: string;

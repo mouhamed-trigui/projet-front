@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CycleDeVieListComponent } from './cycle-de-vie-list/cycle-de-vie-list.component';
+import { RhcongeListComponent } from './rhconge-list/rhconge-list.component';
+import { RhdemanderecListComponent } from './rhdemanderec-list/rhdemanderec-list.component';
+import { RhevalListComponent } from './rheval-list/rheval-list.component';
 
 const routes: Routes = [
   {
@@ -11,22 +14,39 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'cycle'
+        redirectTo: 'rhcongelist'
       },
       {
+        path: 'Rhdemlist',
+        component: RhdemanderecListComponent,
+        data: {
+          title: 'Demande Rect'
+        }
+      },
+       {
+        path: 'rhcongelist',
+        component: RhcongeListComponent,
+        data: {
+          title: 'List Conge'
+        }
+      } 
+      ,
+       {
+        path: 'rheval',
+        component: RhevalListComponent,
+        data: {
+          title: 'List Evaluation'
+        }
+      } 
+      
+      ,
+       {
         path: 'cycle',
         component: CycleDeVieListComponent,
         data: {
-          title: 'Cycle de vie'
+          title: 'List cycle de vie'
         }
-      }
-      /* {
-        path: 'rhpermission',
-        component: RhpermissionComponent,
-        data: {
-          title: 'RH Permission de sortie'
-        }
-      } */
+      } 
     ]
   }
 ];

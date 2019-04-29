@@ -12,6 +12,9 @@ export class RhDemanderecService {
   save(RHdem:Rhdemanderec){
     return this.httpclients.post(this.url,RHdem);
   }
+  getAll(){
+    return this.httpclients.get<Rhdemanderec>("http://localhost:8081/RHdemandeRecrutements");
+  }
   
 }
 
